@@ -1,2 +1,4 @@
 # bacchus-web
-front web show data 
+
+### 系统功能
+负责前端的页面展示和数据可视化
