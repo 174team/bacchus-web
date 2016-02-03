@@ -40,7 +40,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-
-var port = 3000;
-app.listen(port);
-console.log("start on " + port);
+module.exports = app;
+//var port = 3000;
+//app.listen(port);
+//console.log("start on " + port);
