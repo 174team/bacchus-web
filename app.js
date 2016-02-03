@@ -28,12 +28,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
 
 // 设置静态资源目录
 app.use('/public', express.static(__dirname + '/public'));
 
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
@@ -41,6 +39,3 @@ app.use(function(req, res, next) {
 });
 
 module.exports = app;
-//var port = 3000;
-//app.listen(port);
-//console.log("start on " + port);
